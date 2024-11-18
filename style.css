@@ -262,8 +262,8 @@ a {
     font-size: 14px;
   }
 
-  img {
-    height: 40px;
+  .experience-item__image img {
+    height: 75%;
     width: auto;
   }
 
@@ -286,18 +286,10 @@ a {
     --gap: 8px;
     --letter-spacing: 0.08em;
     --font-size: 14px;
-    --font-size-md: 18px;
     --container-primary: 400px;
     --container-secondary: 300px;
   }
 
-  .container {
-    width: min(100% - 30px, var(--container-primary));
-  }
-
-  .container--sm {
-    width: min(100% - 30px, var(--container-secondary));
-  }
 
   .header {
     padding-top: 30px;
@@ -325,13 +317,8 @@ a {
     margin-bottom: 30px;
   }
 
-  .process {
-    margin-bottom: 0;
-  }
-
-  img {
-    height: 30px;
-    width: auto;
+  .experience-item__image img {
+    height: 70%;
   }
 
   .experience-item__number {
