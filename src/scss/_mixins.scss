@@ -1,4 +1,0 @@
-
-@mixin container-size($subtract, $container) {
-  width: min(100% - $margins, $container);
-}
