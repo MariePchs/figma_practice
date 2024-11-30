@@ -1,0 +1,9 @@
+@use 'presets' as *;
+@use 'mixins' as *;
+
+.process {
+  background-color: $color-gray-light;
+  margin-bottom: -41px;
+
+  @include section;
+}

@@ -1,0 +1,18 @@
+@use 'presets' as *;
+@use 'mixins' as *;
+
+.footer {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 45px 0 45px 0;
+
+  &__name {
+    font-size: $font-size-md;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  &__copyright {
+    font-size: 13px;
+  }
+}

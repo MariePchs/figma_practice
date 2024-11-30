@@ -1,0 +1,17 @@
+@use 'presets' as *;
+@use 'mixins' as *;
+
+.about{
+  @include section;
+}
+  
+  @media  (max-width: 991.98px) {
+    .section{
+      padding-top: 75px;
+      padding-bottom: 65px;
+  
+      &__title {
+        font-size: 28px;
+      }
+    }
+  }

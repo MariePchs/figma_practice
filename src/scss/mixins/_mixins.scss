@@ -1,0 +1,25 @@
+@use 'presets' as *;
+
+@mixin section (){
+    padding-top: 105px;
+    padding-bottom: 92px;
+  
+    &__title {
+      font-size: 32px;
+      text-align: center;
+      font-weight: 400;
+      margin-bottom: 50px;
+    }
+  
+    &__description {
+      text-align: center;
+      color: $color-secondary;
+      line-height: $line-height;
+    }
+
+  }
+
+  @mixin container($width){
+    width: min(100% - 40px, $width);
+    margin-inline: auto;
+  }

@@ -1,0 +1,84 @@
+@use 'presets' as *;
+@use 'mixins' as *;
+
+.header {
+  background-color: $color-gray-light;
+  padding-top: 69px;
+  padding-bottom: 140px;
+
+ @media (max-width: 991.98px) {
+    padding-bottom: 70px;
+  }
+}
+
+.navbar {
+  margin-bottom: 135px;
+
+  &__list {
+    display: flex;
+    gap: $gap-lg;
+
+    @media (max-width: 575.98px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        line-height: 0.75;
+      }
+  }
+
+  &__link {
+    display: block;
+    color: $color-black;
+    padding: 0.5em 3px 0.5em 0;
+    letter-spacing: $letter-spacing;
+  }
+
+  &__link--active {
+    color: $color-primary;
+  }
+
+  @media (max-width: 991.98px) {
+      margin-bottom: 80px;
+    } 
+
+  @media (max-width: 575.98px){
+          margin-bottom: 50px;
+        }
+}
+
+.content {
+  max-width: $container-secondary;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 33px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  &__description {
+    color: $color-secondary;
+    margin-bottom: 57px;
+    line-height: $line-height;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-primary;
+    color: $color-white;
+    letter-spacing: $letter-spacing;
+    padding: 1em;
+    min-width: 225px;
+    min-height: 65px;
+  }
+
+  @media (max-width: 575.98px){
+      max-width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+}
